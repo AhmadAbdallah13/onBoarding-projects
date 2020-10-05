@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TEST</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR-->
+    <nav
+      class="sticky-top navbar navbar-expand-lg py-3 navbar-dark bg-dark shadow-sm w-100"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <a href="#" class="navbar-brand">
+              <!-- Logo Image -->
+              <img
+                src="./resources/logo.jpg"
+                width="45"
+                alt=""
+                class="d-inline-block align-middle mr-2"
+              />
+            </a>
+          </div>
+          <div class="col-10">
+            <div class="text-uppercase font-weight-bold align-middle">
+              <h1 style="text-align: center; color: wheat">
+                Manchester United
+              </h1>
+            </div>
+          </div>
+
+          <div class="col">
+            <button class="btn btn-sm btn-outline-success" id="clickMe">click me</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- NAVBAR END-->
+
+    <div class="row" >
+        <!-- SIDEBAR col-->
+        <div class="col-1 rowspan-2">
+            <!-- SIDEBAR-->
+            <div class="d-flex" id="wrapper" style="height: 100%;">
+                <div class="bg-light border-right" id="sidebar-wrapper">
+                    <div class="list-group list-group-flush">
+                      <a href="#" class="list-group-item list-group-item-action bg-light">Dashboard</a>
+                      <a href="#" class="list-group-item list-group-item-action bg-light">Shortcuts</a>
+                      <a href="#" class="list-group-item list-group-item-action bg-light">Overview</a>
+                      <a href="#" class="list-group-item list-group-item-action bg-light">Events</a>
+                      <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+                      <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
+                    </div>
+                  </div>
+            </div>
+            <!-- SIDEBAR END-->
+        </div>
+        <!-- END SIDEBAR col-->
+        <div class="col">
+            <div class="container">
+              <div class="row">
+                <!-- sir alex paragraph -->
+                <table class="table table-bordered mt-2">
+                  <tr>
+                    <td>
+                      <img
+                        src="./resources/sir.jpg"
+                        alt="sir Alex"
+                        height="100px"
+                        width="100px"
+                      />
+                    </td>
+                    <td>
+                      <p>
+                        This man is a legend. Sir Alexander Chapman Ferguson CBE is a
+                        Scottish former football manager and player widely known for
+                        managing Manchester United from 1986 to 2013. He is considered
+                        by many to be the greatest manager of all time and he has won
+                        more trophies than any other manager in the history of football.
+                      </p>
+                    </td>
+                  </tr>
+                </table>
+                <!-- end sir alex paragraph -->
+              </div>
+              <div class="row">
+                <div class="col">
+                  <!-- form -->
+                  <div id="left" class="form-group">
+                    <form action="#">
+                      <input type="text" placeholder="Enter Text" id="txt" class="form-control mt-1"/>
+                      <input
+                        type="text"
+                        placeholder="choose a color for the text"
+                        id="colo"
+                        class="form-control mt-1"
+                      />
+                      <input type="number" placeholder="Text Size" id="num" class="form-control mt-1"/>
+                      <input
+                        type="number"
+                        placeholder="how many times to repeat?"
+                        id="rep"
+                        class="form-control mt-1"
+                      />
+                      <button type="submit" id="btn" class="btn btn-sm btn-success mt-1">Submit</button>
+                    </form>
+                  </div>
+                  <!-- end form -->
+                </div>
+                <!-- displaying area -->
+                <div id="right">
+                  <p id="addOnMe">Empty as a broken water jar</p>
+                </div>
+                <!-- end displaying area -->
+                <div class="col"></div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="page-footer font-small blue align-bottom">
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://manutd.com/"> Manunited.com</a>
+        </div> 
+    </footer>
+    <!-- Footer -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./resources/js/index.js"></script>
+  </body>
+</html>

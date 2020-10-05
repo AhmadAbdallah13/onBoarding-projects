@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project One</title>
+
+    <link rel="stylesheet" href="./resources/css/index.css" type="text/css" />
+  </head>
+  <body>
+    <div class="header" id="header">
+        <table style="height: fit-content; width: 100%;">
+            <tr>
+                <td style="padding: 0%;">
+                    <img src="./resources/logo.jpg" height="70px" width="70px"/>
+                </td>
+                <td colspan="10">
+                    <h7 style="color: wheat; margin-left: 20% ; font-size: xx-large;"> Manchester United</h7>
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 0%;">
+                    <button class="headerBtn" onclick="alert('ta da')"> Click Me</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+<!-- sidebar -->
+    <div id="sidebar" 
+         class="sidebar"
+         >
+        <a href="#">Rooney</a>
+        <a href="#">Nani</a>
+        <a href="#">Cantona</a>
+    </div>
+<!-- end sidebar -->
+
+<!-- sir alex paragraph -->
+    <div class="main">
+      <table>
+        <tr>
+          <td>
+            <img
+              src="./resources/sir.jpg"
+              alt="sir Alex"
+              height="100px"
+              width="100px"
+            />
+          </td>
+          <td>
+            <p>
+              This man is a legend. Sir Alexander Chapman Ferguson CBE is a
+              Scottish former football manager and player widely known for
+              managing Manchester United from 1986 to 2013. He is considered by
+              many to be the greatest manager of all time and he has won more
+              trophies than any other manager in the history of football.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+<!-- end sir alex paragraph -->
+
+    <div id ="parent" >
+        <!-- form -->
+            <div id ="left" class="form" >
+            <form action="#" onsubmit="onSubmit()">
+                <input type="text" placeholder="Enter Text" id="txt" />
+                <input
+                type="text"
+                placeholder="choose a color for the text"
+                id="colo"
+                />
+                <input type="number" placeholder="Text Size" id="num" />
+                <input type="number" placeholder="how many times to repeat?" id="rep" />
+                <button type="submit">Submit</button>
+            </form>
+            </div>
+        <!-- end form -->
+
+        <!-- displaying area -->
+            <div id="right">
+                <p id="addOnMe">Empty as a broken water jar</p>
+            </div>
+        <!-- end displaying area -->
+    </div>
+
+<!-- footer -->
+    <div class="footer">
+      <strong>All rights reserved @manutd</strong>
+    </div>
+<!-- end footer -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="./resources/js/index.js"></script>
+  </body>
+</html>
