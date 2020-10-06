@@ -1,15 +1,25 @@
 {% extends "tasks/base.html" %}
 {% block content %}
-    {% for i in shit %}
-        <article class="media content-section">
-            <div class="media-body">
-            <div class="article-metadata">
-                <a class="mr-2" href="#">{{ i.creator }}</a>
-                <small class="text-muted">Done: {{ i.done }}</small>
-            </div>
-            <h2><a class="article-title" href="#">{{ i.title }}</a></h2>
-            <p class="article-content">{{ i.description }}</p>
-            </div>
-        </article>
-    {% endfor %}
+    {% if tasks %}
+        {% for task in tasks %}
+            <article class="media content-section">
+                <div class="media-body">
+                <div class="article-metadata">
+                    <small class="mr-2">{{ task.creator }}</small>
+                    <small class="text-muted">Done: {{ task.done }}</small>
+                    {% if task.creator == user %}
+                        <div style="float: right;">
+                            <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'task-update' task.id %}">Update</a>
+                            <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'task-delete' task.id %}">Delete</a>
+                        </div>
+                    {% endif %}
+                </div>
+                <h2><a class="article-title" href="{% url 'task-update' task.id %}">{{ task.title }}</a></h2>
+                <p class="article-content">{{ task.description }}</p>
+                </div>
+            </article>
+        {% endfor %}
+    {% else %}
+        <h3> No tasks, you're a lucky person. <a href="{% url 'task-create' %}">Create One</a> </h3>
+    {% endif %}
 {% endblock content %}
